@@ -1,0 +1,54 @@
+
+@import "tailwindcss";
+
+:root {
+  font-family: Inter, system-ui, sans-serif;
+  color: #172033;
+  background: #f8fafc;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.restaurant-card {
+  transition:
+    transform 200ms ease,
+    box-shadow 200ms ease;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 35px rgb(15 23 42 / 10%);
+}
+
+.food-image {
+  transition: transform 300ms ease;
+}
+
+.restaurant-card:hover .food-image {
+  transform: scale(1.04);
+}
+
+.image-wrapper {
+  overflow: hidden;
+}
